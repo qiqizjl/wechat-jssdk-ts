@@ -1,0 +1,25 @@
+{
+  "name": "wechat-jssdk-ts",
+  "version": "1.4.0-dev.0",
+  "description": "WechatJSSDK For TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiqizjl/wechat-jssdk-ts.git"
+  },
+  "keywords": [
+    "wechat",
+    "jssdk",
+    "ts",
+    "typescript"
+  ],
+  "author": "耐小心 <qiqizjl@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qiqizjl/wechat-jssdk-ts/issues"
+  },
+  "homepage": "https://github.com/qiqizjl/wechat-jssdk-ts#readme"
+}
