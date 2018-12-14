@@ -83,11 +83,11 @@ declare namespace WechatJSSDK {
      *
      */
     interface callback {
-        success: (res: object) => void;
-        fail: (res: object) => void;
-        complete: (res: object) => void;
-        cancel: (res: object) => void;
-        trigger: (res: object) => void;
+        success?: (res: object) => void;
+        fail?: (res: object) => void;
+        complete?: (res: object) => void;
+        cancel?: (res: object) => void;
+        trigger?: (res: object) => void;
     }
 
     /**
@@ -111,7 +111,7 @@ declare namespace WechatJSSDK {
     }
 
     // 旧版分享给朋友自定义内容
-    interface shareAppDataOptions extends callback {
+    interface shareAppDataOptions extends shareDataOptions {
         // 分享类型,music、video或link，不填默认为link
         type?: 'music' | 'video' | 'link';
         // 如果type是music或video，则要提供数据链接，默认为空
@@ -596,4 +596,8 @@ declare namespace WechatJSSDK {
      * @param options
      */
     function openAddress(options: callback): void;
+}
+
+declare module 'wechat-jssdk-ts' {
+    export = WechatJSSDK;
 }
