@@ -434,7 +434,7 @@ declare namespace WechatJSSDK {
     /**
      * 开始录音
      */
-    function startRecord(): void;
+    function startRecord(options: callback): void;
 
     /**
      * 停止录音
