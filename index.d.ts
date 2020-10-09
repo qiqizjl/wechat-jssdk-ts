@@ -1,4 +1,7 @@
 declare namespace WechatJSSDK {
+    type OpenTagList = 'wx-open-launch-weapp'
+        | 'wx-open-launch-app';
+
     type JSApiList = 'updateAppMessageShareData'
         | 'updateTimelineShareData'
         | 'onMenuShareTimeline'
@@ -77,6 +80,8 @@ declare namespace WechatJSSDK {
         signature: string;
         // 需要使用的JS接口列表
         jsApiList: JSApiList[];
+        // 可选，需要使用的开放标签列表，例如['wx-open-launch-app']
+        openTagList: OpenTagList[];
     }
 
     /**
