@@ -1,6 +1,6 @@
 {
   "name": "wechat-jssdk-ts",
-  "version": "1.4.0-dev.1",
+  "version": "1.6.0-dev.1",
   "description": "WechatJSSDK For TypeScript",
   "main": "index.js",
   "scripts": {
